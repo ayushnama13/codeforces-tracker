@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Job Interview",
+    "contestId": 1976,
+    "index": "C",
+    "rating": 1600,
+    "tags": [
+      "binary search",
+      "dp",
+      "greedy",
+      "implementation",
+      "two pointers"
+    ],
+    "url": "https://codeforces.com/contest/1976/problem/C",
+    "last_solved": "2026-01-21T11:18:51.107965",
+    "added_on": "2026-01-21T11:18:51.107965"
+  },
+  {
+    "name": "Job Interview",
+    "contestId": 1976,
+    "index": "C",
+    "rating": 1600,
+    "tags": [
+      "binary search",
+      "dp",
+      "greedy",
+      "implementation",
+      "two pointers"
+    ],
+    "url": "https://codeforces.com/contest/1976/problem/C",
+    "last_solved": "2026-01-21T11:19:06.558211",
+    "added_on": "2026-01-21T11:19:06.558211"
+  },
+  {
+    "name": "Fibonaccharsis",
+    "contestId": 1853,
+    "index": "B",
+    "rating": 1200,
+    "tags": [
+      "binary search",
+      "brute force",
+      "math"
+    ],
+    "url": "https://codeforces.com/contest/1853/problem/B",
+    "last_solved": "2026-01-21T21:24:34.394175",
+    "added_on": "2026-01-21T21:24:34.394175"
+  },
+  {
+    "name": "Dolce Vita",
+    "contestId": 1671,
+    "index": "C",
+    "rating": 1200,
+    "tags": [
+      "binary search",
+      "brute force",
+      "greedy",
+      "math"
+    ],
+    "url": "https://codeforces.com/contest/1671/problem/C",
+    "last_solved": "2026-01-22T20:11:10.978139",
+    "added_on": "2026-01-22T20:11:10.978139"
+  },
+  {
+    "name": "Vika and the Bridge",
+    "contestId": 1848,
+    "index": "B",
+    "rating": 1200,
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "implementation",
+      "math",
+      "sortings"
+    ],
+    "url": "https://codeforces.com/contest/1848/problem/B",
+    "last_solved": "2026-01-22T22:23:21.815407",
+    "added_on": "2026-01-22T22:23:21.815407"
+  },
+  {
+    "name": "Anonymous Informant",
+    "contestId": 1893,
+    "index": "A",
+    "rating": 1400,
+    "tags": [
+      "brute force",
+      "dfs and similar",
+      "graphs",
+      "implementation"
+    ],
+    "url": "https://codeforces.com/contest/1893/problem/A",
+    "last_solved": "2026-01-25T14:54:40.233210",
+    "added_on": "2026-01-25T14:54:40.233210"
+  }
+]
