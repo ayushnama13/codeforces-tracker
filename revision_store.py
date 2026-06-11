@@ -27,7 +27,7 @@ _problem_cache = None
 def _load_problemset():
     global _problem_cache
     if _problem_cache is None:
-        data = requests.get(PROBLEMSET_API).json()
+        data = requests.get(PROBLEMSET_API, timeout=30).json()
         problems = data["result"]["problems"]
         _problem_cache = {
             (p["contestId"], p["index"]): p for p in problems
