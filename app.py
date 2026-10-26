@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -8,7 +10,10 @@ from revision_store import (
     add_revision_by_id,
     hide_problem,
     load_hidden_problems,
+    load_reviews,
     load_revision_problems,
+    mark_reviewed,
+    review_status,
     remove_revision_problem,
 )
 
@@ -340,25 +345,32 @@ with tab_rev:
                 for p in problem_history.values()
                 if rev_tag in p["tags"] and (p["contestId"], p["index"]) not in hidden
             ]
-            items.sort(key=lambda p: p["last_solved"])
-            st.caption(f"{len(items)} problems, oldest solve first")
+            reviews = load_reviews()
+            far = datetime.max
+            for p in items:
+                p["due"], p["status"] = review_status(
+                    p["contestId"], p["index"], p["last_solved"].to_pydatetime(), reviews
+                )
+            items.sort(key=lambda p: p["due"] or far)
+            n_due = sum(1 for p in items if p["due"] and p["due"].date() <= pd.Timestamp.now().date())
+            st.caption(f"{len(items)} problems · {n_due} due (7 / 30 / 90 day cycle)")
 
             with st.container(height=520, border=False):
-                for i, p in enumerate(items):
-                    a, b, c = st.columns([5, 2, 1])
+                for i, p in enumerate(items[:200]):
+                    a, b, c, d = st.columns([5, 2, 1, 1])
                     a.markdown(
                         f"[{p['contestId']}{p['index']} · {p['name']}]"
                         f"(https://codeforces.com/contest/{p['contestId']}/problem/{p['index']})"
                     )
-                    b.caption(
-                        f"{p['rating'] or '—'} · {p['last_solved'].strftime('%Y-%m-%d')}"
-                    )
-                    if c.button(
-                        "Hide",
-                        key=f"hide_{p['contestId']}_{p['index']}_{i}",
-                    ):
+                    b.caption(f"{p['rating'] or '—'} · {p['status']}")
+                    if p["due"] and c.button("Done", key=f"done_{p['contestId']}_{p['index']}_{i}"):
+                        mark_reviewed(p["contestId"], p["index"])
+                        st.rerun()
+                    if d.button("Hide", key=f"hide_{p['contestId']}_{p['index']}_{i}"):
                         hide_problem(p["contestId"], p["index"])
                         st.rerun()
+                if len(items) > 200:
+                    st.caption(f"Showing first 200 of {len(items)}; hide or finish some to see more.")
 
     with right:
         with st.container(border=True):
@@ -392,17 +404,27 @@ with tab_rev:
                     lo, hi = st.slider("Rating range", 0, 3500, (800, 1600), step=100)
                     rev_df = rev_df[(rev_df["rating"] >= lo) & (rev_df["rating"] <= hi)]
 
-                rev_df = rev_df.sort_values("last_solved", ascending=False)
-                st.caption(f"{len(rev_df)} problems, newest first")
+                reviews = load_reviews()
+                statuses = [
+                    review_status(r["contestId"], r["index"], pd.Timestamp(r["added_on"]).to_pydatetime(), reviews)
+                    for _, r in rev_df.iterrows()
+                ]
+                rev_df["due"] = [s[0] for s in statuses]
+                rev_df["status"] = [s[1] for s in statuses]
+                rev_df = rev_df.sort_values("due", na_position="last")
+                n_due = sum(1 for d in rev_df["due"] if d is not None and d.date() <= pd.Timestamp.now().date())
+                st.caption(f"{len(rev_df)} problems · {n_due} due, soonest first")
                 with st.container(height=400, border=False):
                     for i, (_, row) in enumerate(rev_df.iterrows()):
-                        a, b, c = st.columns([5, 2, 1])
+                        a, b, c, d = st.columns([5, 2, 1, 1])
                         a.markdown(f"[{row['name']}]({row['url']})")
-                        b.caption(f"{row['rating']} · {row['last_solved']:%Y-%m-%d}")
-                        if c.button(
-                            "Remove",
-                            key=f"remove_{row['contestId']}_{row['index']}_{i}",
+                        b.caption(f"{row['rating']} · {row['status']}")
+                        if row["due"] is not None and c.button(
+                            "Done", key=f"bdone_{row['contestId']}_{row['index']}_{i}"
                         ):
+                            mark_reviewed(row["contestId"], row["index"])
+                            st.rerun()
+                        if d.button("Del", key=f"remove_{row['contestId']}_{row['index']}_{i}"):
                             remove_revision_problem(row["contestId"], row["index"])
                             st.rerun()
 

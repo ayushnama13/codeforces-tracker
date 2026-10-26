@@ -1,6 +1,6 @@
 import json
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 REVISION_FILE = Path("revision_problems.json")
@@ -96,3 +96,42 @@ def hide_problem(contest_id, index):
     hidden.add((contest_id, index))
     with open(HIDDEN_FILE, "w") as f:
         json.dump(list(hidden), f)
+
+
+# ---------- SPACED REPETITION ---------- #
+
+REVIEW_FILE = Path("review_log.json")
+REVIEW_INTERVALS_DAYS = [7, 30, 90]
+
+
+def load_reviews():
+    if not REVIEW_FILE.exists():
+        return {}
+    with open(REVIEW_FILE, "r") as f:
+        return json.load(f)
+
+
+def mark_reviewed(contest_id, index):
+    reviews = load_reviews()
+    reviews.setdefault(f"{contest_id}{index}", []).append(datetime.now().isoformat())
+    with open(REVIEW_FILE, "w") as f:
+        json.dump(reviews, f, indent=2)
+
+
+def review_status(contest_id, index, base_date, reviews):
+    """
+    Returns (due_date, label). due_date is None once all intervals are done.
+    base_date: when the problem was solved/added, used until the first review.
+    """
+    done = reviews.get(f"{contest_id}{index}", [])
+    if len(done) >= len(REVIEW_INTERVALS_DAYS):
+        return None, "mastered"
+
+    last = datetime.fromisoformat(done[-1]) if done else base_date
+    due = last + timedelta(days=REVIEW_INTERVALS_DAYS[len(done)])
+    days = (due.date() - datetime.now().date()).days
+    if days <= 0:
+        label = "due today" if days == 0 else f"overdue {-days}d"
+    else:
+        label = f"due in {days}d"
+    return due, label
