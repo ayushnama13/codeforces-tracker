@@ -1,4 +1,6 @@
+import json
 import requests
+from pathlib import Path
 import pandas as pd
 from collections import defaultdict, Counter
 from config import FOCUS_TAGS
@@ -12,6 +14,26 @@ def fetch_submissions(handle):
     if data.get("status") != "OK":
         raise RuntimeError(data.get("comment", "Codeforces API error"))
     return data["result"]
+
+
+CACHE_DIR = Path("cache")
+
+
+def load_submissions(handle):
+    """Fetch from the API and cache to disk; fall back to the cache when offline.
+
+    Returns (submissions, stale) where stale is True if the cache was used.
+    """
+    cache_file = CACHE_DIR / f"{handle}.json"
+    try:
+        subs = fetch_submissions(handle)
+    except Exception:
+        if cache_file.exists():
+            return json.loads(cache_file.read_text()), True
+        raise
+    CACHE_DIR.mkdir(exist_ok=True)
+    cache_file.write_text(json.dumps(subs))
+    return subs, False
 
 
 def preprocess(submissions):

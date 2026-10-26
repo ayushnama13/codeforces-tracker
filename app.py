@@ -5,7 +5,7 @@ import plotly.express as px
 import streamlit as st
 
 from config import FOCUS_TAGS, HANDLE
-from data import fetch_submissions, preprocess
+from data import load_submissions, preprocess
 from revision_store import (
     add_revision_by_id,
     hide_problem,
@@ -73,39 +73,61 @@ with st.sidebar:
 
 @st.cache_data(ttl=600)
 def load_data(handle):
-    return preprocess(fetch_submissions(handle))
+    subs, stale = load_submissions(handle)
+    return preprocess(subs), stale
 
 
 @st.cache_data
 def load_all_problems():
-    return pd.read_csv("codeforces_all_problems.csv")
+    probs = pd.read_csv("codeforces_all_problems.csv")
+    probs = probs[(probs["phase"] == "FINISHED") & probs["rating"].notna()].copy()
+    probs["letter"] = probs["problemIndex"].str[0]
+    probs["rating"] = probs["rating"].astype(int)
+    return probs
+
+
+@st.cache_data
+def with_solved(handle, _solved_ids):
+    probs = load_all_problems().copy()
+    probs["solved"] = [
+        (c, i) in _solved_ids for c, i in zip(probs["contestId"], probs["problemIndex"])
+    ]
+    return probs
+
+
+@st.cache_data
+def explode_tags(probs):
+    out = probs.assign(tag=probs["tags"].str.split(";")).explode("tag")
+    return out.dropna(subset=["tag"]).reset_index(drop=True)
 
 
 try:
     (
-        df,
-        verdicts,
-        monthly,
-        attempts,
-        ac,
-        contest_tag,
-        practice_tag,
-        problem_history,
+        (
+            df,
+            verdicts,
+            monthly,
+            attempts,
+            ac,
+            contest_tag,
+            practice_tag,
+            problem_history,
+        ),
+        stale,
     ) = load_data(handle)
 except Exception as e:
     st.error(f"Could not load data for '{handle}': {e}")
     st.stop()
 
+if stale:
+    st.warning("Codeforces is unreachable; showing cached data from the last successful fetch.")
+
 if df.empty:
     st.warning(f"No solved problems found for '{handle}'.")
     st.stop()
 
-all_probs = load_all_problems()
-all_probs = all_probs[
-    (all_probs["phase"] == "FINISHED") & all_probs["rating"].notna()
-].copy()
-all_probs["letter"] = all_probs["problemIndex"].str[0]
-all_probs["rating"] = all_probs["rating"].astype(int)
+solved_ids = set(zip(df["contestId"], df["index"]))
+all_probs = with_solved(handle, solved_ids)
 
 with st.sidebar:
     divs = st.multiselect(
@@ -131,7 +153,6 @@ tab_over, tab_heat, tab_rev, tab_perf = st.tabs(
 )
 
 tags_exploded = df.explode("tags")
-solved_ids = set(zip(df["contestId"], df["index"]))
 
 # ---------- OVERVIEW ----------
 
@@ -224,7 +245,8 @@ with tab_over:
 
 # ---------- HEATMAPS ----------
 
-with tab_heat:
+@st.fragment
+def heatmap_tab(all_probs, divs, n_contests):
     pool = all_probs[all_probs["division"].isin(divs)]
     recent_ids = (
         pool.drop_duplicates("contestId")
@@ -247,13 +269,6 @@ with tab_heat:
     if recent.empty:
         st.info("No problems match the current filters.")
     else:
-        recent = recent.assign(
-            solved=[
-                (cid, idx) in solved_ids
-                for cid, idx in zip(recent["contestId"], recent["problemIndex"])
-            ]
-        )
-
         def grid(frame, row):
             if mode == "% solved by you":
                 return frame.pivot_table(
@@ -282,12 +297,7 @@ with tab_heat:
             )
         )
 
-        tag_rows = (
-            recent.assign(tag=recent["tags"].str.split(";"))
-            .explode("tag")
-            .dropna(subset=["tag"])
-            .reset_index(drop=True)
-        )
+        tag_rows = explode_tags(recent)
         tag_grid = grid(tag_rows, "tag")
         card(
             style(
@@ -328,6 +338,10 @@ with tab_heat:
                 height=max(360, 30 * len(mine) + 120),
             )
         )
+
+
+with tab_heat:
+    heatmap_tab(all_probs, divs, n_contests)
 
 # ---------- REVISION ----------
 
