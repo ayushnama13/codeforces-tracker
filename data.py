@@ -6,7 +6,12 @@ from config import FOCUS_TAGS
 
 def fetch_submissions(handle):
     url = f"https://codeforces.com/api/user.status?handle={handle}"
-    return requests.get(url).json()["result"]
+    resp = requests.get(url, timeout=30)
+    resp.raise_for_status()
+    data = resp.json()
+    if data.get("status") != "OK":
+        raise RuntimeError(data.get("comment", "Codeforces API error"))
+    return data["result"]
 
 
 def preprocess(submissions):
@@ -28,6 +33,8 @@ def preprocess(submissions):
             verdicts[verdict] += 1
 
         p = s["problem"]
+        if "contestId" not in p:
+            continue
         pid = (p["contestId"], p["index"])
         tags = p.get("tags", [])
 
