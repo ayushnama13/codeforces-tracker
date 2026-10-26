@@ -126,6 +126,7 @@ tab_over, tab_heat, tab_rev, tab_perf = st.tabs(
 )
 
 tags_exploded = df.explode("tags")
+solved_ids = set(zip(df["contestId"], df["index"]))
 
 # ---------- OVERVIEW ----------
 
@@ -232,18 +233,44 @@ with tab_heat:
         "Change N and divisions in the sidebar."
     )
 
+    mode = st.radio(
+        "Cell value",
+        ["Problems", "% solved by you", "Unsolved by you"],
+        horizontal=True,
+    )
+
     if recent.empty:
         st.info("No problems match the current filters.")
     else:
-        letter_grid = pd.crosstab(recent["letter"], recent["rating"])
+        recent = recent.assign(
+            solved=[
+                (cid, idx) in solved_ids
+                for cid, idx in zip(recent["contestId"], recent["problemIndex"])
+            ]
+        )
+
+        def grid(frame, row):
+            if mode == "% solved by you":
+                return frame.pivot_table(
+                    index=row, columns="rating", values="solved", aggfunc="mean"
+                )
+            if mode == "Unsolved by you":
+                return pd.crosstab(frame[row], frame["rating"], values=~frame["solved"], aggfunc="sum").fillna(0)
+            return pd.crosstab(frame[row], frame["rating"])
+
+        fmt = ".0%" if mode == "% solved by you" else True
+        scale = "Greens" if mode == "% solved by you" else "Blues"
+        label = {"Problems": "Count", "% solved by you": "Solved", "Unsolved by you": "Unsolved"}[mode]
+
+        letter_grid = grid(recent, "letter")
         card(
             style(
                 px.imshow(
                     letter_grid,
-                    text_auto=True,
+                    text_auto=fmt,
                     aspect="auto",
-                    color_continuous_scale="Blues",
-                    labels=dict(x="Rating", y="Problem letter", color="Count"),
+                    color_continuous_scale=scale,
+                    labels=dict(x="Rating", y="Problem letter", color=label),
                     title="Problem letter × rating",
                 ),
                 height=max(320, 32 * len(letter_grid) + 120),
@@ -256,15 +283,15 @@ with tab_heat:
             .dropna(subset=["tag"])
             .reset_index(drop=True)
         )
-        tag_grid = pd.crosstab(tag_rows["tag"], tag_rows["rating"])
+        tag_grid = grid(tag_rows, "tag")
         card(
             style(
                 px.imshow(
                     tag_grid,
-                    text_auto=True,
+                    text_auto=fmt,
                     aspect="auto",
-                    color_continuous_scale="Blues",
-                    labels=dict(x="Rating", y="Tag", color="Count"),
+                    color_continuous_scale=scale,
+                    labels=dict(x="Rating", y="Tag", color=label),
                     title="Tag × rating",
                 ),
                 height=max(400, 24 * len(tag_grid) + 120),
