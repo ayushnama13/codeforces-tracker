@@ -47,12 +47,14 @@ Cross-platform aggregation, public portfolio pages, live FFT rating prediction (
 
 ## Order of work
 
-Codex and the hand-written frontend work run one after the other, never at the same time, because each needs a clean tree.
+Stack decided: a FastAPI JSON server plus a hand-written HTML/CSS/JS frontend, with pages Today, Practice, Progress, Coverage, Revision and Problem. All of Tier 0 and Tier 1 is in scope. Codex and frontend work run one after the other, never at the same time, because each needs a clean tree.
 
-1. Backend (Codex): a new pure module `analytics.py` plus `tests/` (pytest, with a small committed submissions fixture). `app.py` is not touched. Covers F2-F5, F7 and F8, and the Tier 1 data functions (#1-#9).
+1. Backend (Codex): `analytics.py`, a pure module whose functions return JSON-ready dicts and lists, with pytest tests on the committed fixtures in `tests/fixtures/`. Tests never call Codeforces. Covers F2-F5, F7, F8 and the Tier 1 data functions (#1-#9).
    - F5: move the existing backlog, hidden and review files to the current handle so nothing is lost.
    - F7: if a refetch fails or is slow, keep using the existing CSV.
    - #7: the daily pick is seeded by date (or saved), so it does not change on every rerun.
-   - #3: needs `participantType`, so it must survive preprocessing.
-2. Frontend (by hand, after the layout is approved): rewrite `app.py` around the new module, including F1 (caching) and F9, then add the Tier 1 views.
-3. Screenshot every page before and after, and run the tests.
+   - #3: needs `participantType`.
+2. Backend (Codex, after the endpoint list is approved): `server.py`, the JSON API plus static files, bound to 127.0.0.1. Validates the handle against a strict pattern because it becomes part of file paths. Includes server-side caching (F1) and a launcher (F6).
+3. Frontend (by hand, after the mock is approved): `static/`. API strings are inserted with `textContent`, never `innerHTML`. Today first, end to end, then one page per commit. F9 goes away with the new UI.
+4. `app.py` (Streamlit) keeps working until the new UI does everything it does. Deleting it needs a separate OK.
+5. Screenshot every page and run the tests.

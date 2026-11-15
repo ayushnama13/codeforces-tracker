@@ -1,0 +1,346 @@
+contestId,contestName,division,phase,startTime,problemIndex,problemName,rating,tags
+2194,Codeforces Round 1078 (Div. 2),Div2,FINISHED,1770541500,A,Lawn Mower,800,greedy;math
+2193,Codeforces Round 1076 (Div. 3),Div3,FINISHED,1769351700,F,Pizza Delivery,1600,dp;greedy
+2193,Codeforces Round 1076 (Div. 3),Div3,FINISHED,1769351700,E,Product Queries,1300,dp;math;number theory;shortest paths
+2193,Codeforces Round 1076 (Div. 3),Div3,FINISHED,1769351700,D,Monster Game,1100,binary search;sortings;two pointers
+2193,Codeforces Round 1076 (Div. 3),Div3,FINISHED,1769351700,C,Replace and Sum,1000,data structures;greedy
+2193,Codeforces Round 1076 (Div. 3),Div3,FINISHED,1769351700,B,Reverse a Permutation,800,greedy
+2189,Codeforces Round 1075 (Div. 2),Div2,FINISHED,1769178900,C1,XOR Convenience (Easy Version),1300,bitmasks;constructive algorithms;math
+2188,Codeforces Round 1077 (Div. 2),Div2,FINISHED,1769697300,B,Seats,1000,greedy
+2188,Codeforces Round 1077 (Div. 2),Div2,FINISHED,1769697300,A,Divisible Permutation,800,constructive algorithms
+2185,Codeforces Round 1074 (Div. 4),Div4,FINISHED,1768746900,D,OutOfMemoryError,1100,data structures;implementation;math;two pointers
+2184,Codeforces Round 1072 (Div. 3),Div3,FINISHED,1768228500,D,Unfair Game,1600,combinatorics;dp;math
+2180,Codeforces Global Round 31 (Div. 1 + Div. 2),Div1+Div2,FINISHED,1766154900,A,Carnival Wheel,800,brute force;number theory
+2171,Codeforces Round 1065 (Div. 3),Div3,FINISHED,1763649300,C2,Renako Amaori and XOR Game (hard version),1400,bitmasks;games;greedy
+2169,Educational Codeforces Round 184 (Rated for Div. 2),Div2,FINISHED,1763130900,A,Alice and Bob,900,greedy;implementation
+2167,Codeforces Round 1062 (Div. 4),Div4,FINISHED,1761662100,B,Your Name,800,sortings;strings
+2162,Codeforces Round 1059 (Div. 3),Div3,FINISHED,1760711700,E,Beautiful Palindromes,1600,constructive algorithms;greedy;schedules
+2162,Codeforces Round 1059 (Div. 3),Div3,FINISHED,1760711700,D,Beautiful Permutation,1400,binary search;interactive
+2162,Codeforces Round 1059 (Div. 3),Div3,FINISHED,1760711700,C,Beautiful XOR,1100,bitmasks;constructive algorithms;greedy
+2158,Codeforces Round 1067 (Div. 2),Div2,FINISHED,1764426900,B,Split,1200,constructive algorithms;greedy;math
+2137,Codeforces Round 1047 (Div. 3),Div3,FINISHED,1757255700,D,Replace with Occurrences,1200,constructive algorithms
+2109,Codeforces Round 1025 (Div. 2),Div2,FINISHED,1747492500,C2,Hacking Numbers (Medium Version),1700,constructive algorithms;interactive;math;number theory
+2064,Codeforces Round 1005 (Div. 2),Div2,FINISHED,1739716500,C,Remove the Ends,1300,brute force;constructive algorithms;dp;greedy
+2059,Codeforces Round 1002 (Div. 2),Div2,FINISHED,1738506900,B,Cost of the Array,1300,brute force;constructive algorithms;greedy;math
+2002,EPIC Institute of Technology Round August 2024 (Div. 1 + Div. 2),Div1+Div2,FINISHED,1723386900,B,Removals Game,1000,constructive algorithms;games
+1994,Codeforces Round 959 sponsored by NEAR (Div. 1 + Div. 2),Div1+Div2,FINISHED,1721313300,A,Diverse Game,800,constructive algorithms;greedy;implementation
+1980,Codeforces Round 950 (Div. 3),Div3,FINISHED,1717425300,D,GCD-sequence,1400,greedy;implementation;math;number theory
+1976,Educational Codeforces Round 166 (Rated for Div. 2),Div2,FINISHED,1717079700,B,Increase/Decrease/Copy,1100,greedy;implementation
+1974,Codeforces Round 946 (Div. 3),Div3,FINISHED,1716215700,A,Phone Desktop,800,greedy;math
+1951,Codeforces Global Round 25,Global,FINISHED,1712414100,B,Battle Cows,1200,binary search;data structures;greedy
+1926,Codeforces Round 928 (Div. 4),Div4,FINISHED,1708353300,D,Vlad and Division,1300,bitmasks;greedy
+1896,"CodeTON Round 7 (Div. 1 + Div. 2, Rated, Prizes!)",Div1+Div2,FINISHED,1700923800,C,Matching Arrays,1400,binary search;constructive algorithms;greedy;sortings
+1896,"CodeTON Round 7 (Div. 1 + Div. 2, Rated, Prizes!)",Div1+Div2,FINISHED,1700923800,B,AB Flipping,900,greedy;strings;two pointers
+1800,Codeforces Round 855 (Div. 3),Div3,FINISHED,1677767700,D,Remove Two Letters,1200,data structures;greedy;hashing;strings
+1734,Codeforces Round 822 (Div. 2),Div2,FINISHED,1663934700,C,Removing Smallest Multiples,1200,greedy;math
+1657,Educational Codeforces Round 125 (Rated for Div. 2),Div2,FINISHED,1647960300,C,Bracket Sequence Deletion,1200,greedy;implementation
+1594,Codeforces Round 747 (Div. 2),Div2,FINISHED,1633705500,C,Make Them Equal,1200,brute force;greedy;math;strings
+1543,Codeforces Round 730 (Div. 2),Div2,FINISHED,1625668500,A,Exciting Bets,900,greedy;math;number theory
+1389,Educational Codeforces Round 92 (Rated for Div. 2),Div2,FINISHED,1596033300,A,LCM Problem,800,constructive algorithms;greedy;math;number theory
+1097,Hello 2019,Other,FINISHED,1546613100,B,Petr and a Combination Lock,1200,bitmasks;brute force;dp
+897,Codeforces Round 449 (Div. 2),Div2,FINISHED,1512223500,A,Scarborough Fair,800,implementation
+486,Codeforces Round 277 (Div. 2),Div2,FINISHED,1415718000,A,Calculating Function,800,implementation;math
+379,Good Bye 2013,Other,FINISHED,1388417400,A,New Year Candles,1000,implementation
+231,Codeforces Round 143 (Div. 2),Div2,FINISHED,1349623800,A,Team,800,brute force;greedy
+41,Codeforces Beta Round 40 (Div. 2),Div2,FINISHED,1289232000,A,Translation,800,implementation;strings
+4,Codeforces Beta Round 4 (Div. 2 Only),Div2,FINISHED,1268395200,A,Watermelon,800,brute force;math
+331,ABBYY Cup 3.0 - Finals (online version),Other,FINISHED,1374075000,C1,The Great Julya Calendar,1100,dp
+2001,Codeforces Round 967 (Div. 2),Div2,FINISHED,1724164500,A,Make All Equal,800,greedy;implementation
+1360,Codeforces Round 644 (Div. 3),Div3,FINISHED,1590327300,A,Minimal Square,800,greedy;math
+2189,Codeforces Round 1075 (Div. 2),Div2,FINISHED,1769178900,A,Table with Numbers,800,greedy;implementation
+2210,Codeforces Round 1089 (Div. 2),Div2,FINISHED,1774794900,B,Simply Sitting on Chairs,900,data structures;greedy
+2204,Educational Codeforces Round 188 (Rated for Div. 2),Div2,FINISHED,1773671700,A,Passing the Ball,800,brute force;implementation
+101,Codeforces Beta Round 79 (Div. 1 Only),Div1,FINISHED,1312390800,D,Castle,2300,dp;greedy;probabilities;sortings;trees
+546,Codeforces Round 304 (Div. 2),Div2,FINISHED,1432312200,A,Soldier and Bananas,800,brute force;implementation;math
+2248,Codeforces Round 1113 (Div. 2),Div2,FINISHED,1785594900,F,Matrix Elimination,2500,binary search;greedy;math
+1141,Codeforces Round 547 (Div. 3),Div3,FINISHED,1553006100,E,Superhero Battle,1700,math
+1684,Codeforces Round 792 (Div. 1 + Div. 2),Div1+Div2,FINISHED,1652970900,D,Traps,1700,constructive algorithms;greedy;sortings
+1000,Educational Codeforces Round 46 (Rated for Div. 2),Div2,FINISHED,1530110100,E,We Need More Bosses,2100,dfs and similar;graphs;trees
+2194,Codeforces Round 1078 (Div. 2),Div2,FINISHED,1770541500,B,Offshores,1000,greedy;implementation;math
+603,Codeforces Round 334 (Div. 1),Div1,FINISHED,1448984100,C,Lieges of Legendre,2200,games;math
+1670,Codeforces Round 788 (Div. 2),Div2,FINISHED,1651847700,D,Very Suspicious,1700,binary search;brute force;geometry;greedy;implementation;math
+935,Codeforces Round 465 (Div. 2),Div2,FINISHED,1519058100,E,Fafa and Ancient Mathematics,2300,dfs and similar;dp;trees
+724,"Intel Code Challenge Final Round (Div. 1 + Div. 2, Combined)",Div1+Div2,FINISHED,1475928900,E,Goods transportation,2900,dp;flows;greedy
+497,Codeforces Round 283 (Div. 1),Div1,FINISHED,1418833800,E,Subsequences Return,2900,dp;matrices
+1628,Codeforces Round 767 (Div. 1),Div1,FINISHED,1642862100,A,Meximum Array,1400,binary search;constructive algorithms;greedy;implementation;math;two pointers
+1254,Codeforces Round 601 (Div. 1),Div1,FINISHED,1574174100,D,Tree Queries,2700,data structures;probabilities;trees
+1635,Codeforces Round 772 (Div. 2),Div2,FINISHED,1645367700,B,Avoid Local Maximums,800,greedy
+14,Codeforces Beta Round 14 (Div. 2),Div2,FINISHED,1274283000,B,Young Photographer,1000,implementation
+1677,Codeforces Round 789 (Div. 1),Div1,FINISHED,1652020500,A,Tokitsukaze and Strange Inequality,1600,brute force;data structures;dp
+856,"Russian Code Cup 2017 - Finals [Unofficial Mirror, Div. 1 Only Recommended, Teams Allowed]",Div1,FINISHED,1505050500,D,Masha and Cactus,2400,dp;trees
+1450,Codeforces Global Round 12,Global,FINISHED,1607265300,G,Communism,3500,bitmasks;dp;trees
+2211,"Nebius Round 2 (Codeforces Round 1088, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1774709100,G,Rational Bubble Sort,3100,constructive algorithms;geometry;greedy
+1017,"Codeforces Round 502 (in memory of Leopoldo Taravilse, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1533737100,B,The Bits,1200,implementation;math
+483,Codeforces Round 275 (Div. 2),Div2,FINISHED,1414170000,A,Counterexample ,1100,brute force;implementation;math;number theory
+130,Unknown Language Round 4,Other,FINISHED,1321801200,G,CAPS LOCK ON,1700,*special
+2005,Codeforces Round 972 (Div. 2),Div2,FINISHED,1726324500,E2,Subtangle Game (Hard Version),2500,data structures;dp;games;greedy;implementation
+1771,Codeforces Round 837 (Div. 2),Div2,FINISHED,1670772900,E,Hossam and a Letter,2500,brute force;dp;implementation;two pointers
+177,ABBYY Cup 2.0 - Easy,Other,FINISHED,1335016800,E2,Space Voyage,1900,binary search
+1425,"2020 ICPC, COMPFEST 12, Indonesia Multi-Provincial Contest (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",Other,FINISHED,1601182800,I,Impressive Harvesting of The Orchard,2800,data structures
+1950,Codeforces Round 937 (Div. 4),Div4,FINISHED,1711637100,E,Nearly Shortest Repeating Substring,1500,brute force;implementation;number theory;strings
+1303,Educational Codeforces Round 82 (Rated for Div. 2),Div2,FINISHED,1581518100,G,Sum of Prefix Sums,2700,data structures;divide and conquer;geometry;trees
+707,Codeforces Round 368 (Div. 2),Div2,FINISHED,1471698300,C,Pythagorean Triples,1500,math;number theory
+680,Codeforces Round 356 (Div. 2),Div2,FINISHED,1465403700,A,Bear and Five Cards,800,constructive algorithms;implementation
+36,Codeforces Beta Round 36,Other,FINISHED,1287482400,B,Fractal,1600,implementation
+1763,Codeforces Round 840 (Div. 2) and Enigma 2022 - Cybros LNMIIT,Div2,FINISHED,1671460500,D,Valid Bitonic Permutations,2200,combinatorics;dp;implementation;math;number theory
+1403,"Central-European Olympiad in Informatics, CEOI 2020, Day 2 (IOI, Unofficial Mirror Contest, Unrated)",Other,FINISHED,1598616300,C,Chess Rush,3200,*special;combinatorics;dp;implementation;math
+1468,"2020-2021 ICPC, NERC, Southern and Volga Russian Regional Contest (Online Mirror, ICPC Rules)",Other,FINISHED,1608896100,N,Waste Sorting,900,greedy;implementation
+343,Codeforces Round 200 (Div. 1),Div1,FINISHED,1379172600,E,Pumping Stations,2900,brute force;dfs and similar;divide and conquer;flows;graphs;greedy;trees
+712,Codeforces Round 370 (Div. 2),Div2,FINISHED,1473525900,D,Memory and Scores,2200,combinatorics;dp;math
+689,Codeforces Round 361 (Div. 2),Div2,FINISHED,1467822900,E,Mike and Geometry Problem,2000,combinatorics;data structures;dp;geometry;implementation
+1096,Educational Codeforces Round 57 (Rated for Div. 2),Div2,FINISHED,1546007700,B,Substring Removal,1300,combinatorics;math;strings
+337,Codeforces Round 196 (Div. 2),Div2,FINISHED,1376668800,E,Divisor Tree,2200,brute force;number theory;trees
+2179,Codeforces Round 1071 (Div. 3),Div3,FINISHED,1766501100,G,Blackslex and Penguin Migration,2200,brute force;interactive;math
+778,Codeforces Round 402 (Div. 1),Div1,FINISHED,1488096300,B,Bitwise Formula,1800,bitmasks;brute force;dfs and similar;expression parsing;implementation
+1605,Codeforces Round 754 (Div. 2),Div2,FINISHED,1636727700,B,Reverse Sort,1000,greedy;sortings
+1060,"Codeforces Round 513 by Barcelona Bootcamp (rated, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1538636700,H,Sophisticated Device,3300,constructive algorithms
+1027,Educational Codeforces Round 49 (Rated for Div. 2),Div2,FINISHED,1534602900,C,Minimum Value Rectangle,1600,greedy
+49,Codeforces Beta Round 46 (Div. 2),Div2,FINISHED,1292601600,E,Common ancestor,2300,dp
+1804,Nebius Welcome Round (Div. 1 + Div. 2),Div1+Div2,FINISHED,1678631700,E,Routing,2400,bitmasks;brute force;dfs and similar;dp;graphs
+1186,Codeforces Round 571 (Div. 2),Div2,FINISHED,1561710000,D,Vus the Cossack and Numbers,1500,constructive algorithms;greedy;math
+514,Codeforces Round 291 (Div. 2),Div2,FINISHED,1423931400,C,Watto and Mechanism,2000,binary search;data structures;hashing;string suffix structures;strings
+22,Codeforces Beta Round 22 (Div. 2 Only),Div2,FINISHED,1277823600,D,Segments,1900,greedy;sortings
+1163,Codeforces Round 558 (Div. 2),Div2,FINISHED,1557414300,B1,Cat Party (Easy Edition),1500,data structures;implementation
+2041,"2024 ICPC Asia Taichung Regional Contest (Unrated, Online Mirror, ICPC Rules, Preferably Teams)",Other,FINISHED,1732431900,K,Trophic Balance Species,3100,binary search;brute force;dfs and similar;graphs
+932,"ICM Technex 2018 and Codeforces Round 463 (Div. 1 + Div. 2, combined)",Div1+Div2,FINISHED,1518705300,B,Recursive Queries,1300,binary search;data structures;dfs and similar
+53,Codeforces Beta Round 49 (Div. 2),Div2,FINISHED,1294329600,B,Blog Photo,1700,binary search;implementation
+677,Codeforces Round 355 (Div. 2),Div2,FINISHED,1464798900,E,Vanya and Balloons,2300,binary search;brute force;dp;implementation
+1987,EPIC Institute of Technology Round Summer 2024 (Div. 1 + Div. 2),Div1+Div2,FINISHED,1719758100,G1,Spinning Round (Easy Version),2900,divide and conquer;dp;trees
+1833,Codeforces Round 874 (Div. 3),Div3,FINISHED,1684506900,A,Musical Puzzle,800,implementation;strings
+626,8VC Venture Cup 2016 - Elimination Round,Other,FINISHED,1455384900,G,Raffles,3100,data structures;dp;greedy;math
+1096,Educational Codeforces Round 57 (Rated for Div. 2),Div2,FINISHED,1546007700,C,Polygon for the Angle,1600,brute force;geometry
+1178,Codeforces Global Round 4,Global,FINISHED,1563636900,F1,Short Colorful Strip,2200,combinatorics;dfs and similar;dp
+747,Codeforces Round 387 (Div. 2),Div2,FINISHED,1482113100,A,Display Size,800,brute force;math
+2192,Codeforces Round 1081 (Div. 2),Div2,FINISHED,1771684500,A,String Rotation Game,800,brute force;strings
+820,Codeforces Round 421 (Div. 2),Div2,FINISHED,1498574100,A,Mister B and Book Reading,900,implementation
+2155,Codeforces Round 1056 (Div. 2),Div2,FINISHED,1759682100,E,Mimo & Yuyu,2200,games;greedy;math
+1386,"Baltic Olympiad in Informatics 2020, Day 1 (IOI, Unofficial Mirror Contest, Unrated)",Other,FINISHED,1595415900,B,Mixture,2900,*special;data structures;geometry;math;sortings
+233,Codeforces Round 144 (Div. 2),Div2,FINISHED,1349969400,A,Perfect Permutation,800,implementation;math
+321,Codeforces Round 190 (Div. 1),Div1,FINISHED,1372433400,A,Ciel and Robot,1700,binary search;implementation;math
+381,Codeforces Round 223 (Div. 2),Div2,FINISHED,1389540600,B,Sereja and Stairs,1100,greedy;implementation;sortings
+1095,Codeforces Round 529 (Div. 3),Div3,FINISHED,1545921300,D,Circular Dance,1600,implementation
+112,Codeforces Beta Round 85 (Div. 2 Only),Div2,FINISHED,1315051200,A,Petya and Strings,800,implementation;strings
+1810,"CodeTON Round 4 (Div. 1 + Div. 2, Rated, Prizes!)",Div1+Div2,FINISHED,1680273300,D,Climbing the Tree,1700,binary search;math
+1817,Codeforces Round 869 (Div. 1),Div1,FINISHED,1682778900,C,Similar Polynomials,2400,combinatorics;math
+702,Educational Codeforces Round 15,Educational,FINISHED,1469804400,C,Cellular Network,1500,binary search;implementation;two pointers
+1651,Educational Codeforces Round 124 (Rated for Div. 2),Div2,FINISHED,1646922900,E,Sum of Matchings,2600,brute force;combinatorics;constructive algorithms;dfs and similar;graph matchings;greedy;math
+2239,Codeforces Round 1105 (Div. 1),Div1,FINISHED,1782570900,E,"The end of this world,",3300,data structures;divide and conquer;dsu;graphs
+1733,Codeforces Round 821 (Div. 2),Div2,FINISHED,1663598100,D1,Zero-One (Easy Version),1400,constructive algorithms;greedy;math
+551,Codeforces Round 307 (Div. 2),Div2,FINISHED,1434127500,E,GukiZ and GukiZiana,2500,binary search;data structures;implementation
+516,Codeforces Round 292 (Div. 1),Div1,FINISHED,1424190900,D,Drazil and Morning Exercise,2800,dfs and similar;dp;dsu;trees;two pointers
+1631,Codeforces Round 768 (Div. 2),Div2,FINISHED,1643294100,A,Min Max Swap,800,greedy
+1060,"Codeforces Round 513 by Barcelona Bootcamp (rated, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1538636700,E,Sergey and Subway,2000,dfs and similar;dp;trees
+653,IndiaHacks 2016 - Online Edition (Div. 1 + Div. 2),Div1+Div2,FINISHED,1458376500,A,Bear and Three Balls,900,brute force;implementation;sortings
+1263,Codeforces Round 603 (Div. 2),Div2,FINISHED,1575038100,F,Economic Difficulties,2400,data structures;dfs and similar;dp;flows;graphs;trees
+383,Codeforces Round 225 (Div. 1),Div1,FINISHED,1390231800,A,Milking cows,1600,data structures;greedy
+1227,Technocup 2020 - Elimination Round 3,Other,FINISHED,1574582700,F2,Wrong Answer on test 233 (Hard Version),2400,combinatorics;math
+858,Технокубок 2018 - Отборочный Раунд 1,Other,FINISHED,1505653500,F,Wizard's Tour,2300,constructive algorithms;dfs and similar;graphs
+1514,Codeforces Round 716 (Div. 2),Div2,FINISHED,1618839300,B,"AND 0, Sum Big",1200,bitmasks;combinatorics;math
+67,Manthan 2011,Other,FINISHED,1300033800,C,Sequence of Balls,2600,dp
+518,Codeforces Round 293 (Div. 2),Div2,FINISHED,1424795400,D,Ilya and Escalator,1700,combinatorics;dp;math;probabilities
+256,Codeforces Round 156 (Div. 1),Div1,FINISHED,1355671800,D,Liars and Serge,2700,dp
+2259,Codeforces Round 1119 (Div. 3),Div3,FINISHED,1788619500,D,MEX Multiset,1200,constructive algorithms;greedy
+1132,Educational Codeforces Round 61 (Rated for Div. 2),Div2,FINISHED,1551798300,D,Stressful Training,2300,binary search;greedy
+659,Codeforces Round 346 (Div. 2),Div2,FINISHED,1459353900,G,Fence Divercity,2300,combinatorics;dp;number theory
+1928,Codeforces Round 924 (Div. 2),Div2,FINISHED,1707644100,B,Equalize,1200,binary search;greedy;sortings;two pointers
+631,Codeforces Round 344 (Div. 2),Div2,FINISHED,1457022900,B,Print Check,1200,constructive algorithms;implementation
+463,Codeforces Round 264 (Div. 2),Div2,FINISHED,1409383800,E,Caisa and Tree,2100,brute force;dfs and similar;math;number theory;trees
+1715,Codeforces Round 816 (Div. 2),Div2,FINISHED,1661006100,F,Crop Squares,2700,constructive algorithms;geometry;interactive;math
+986,Codeforces Round 485 (Div. 1),Div1,FINISHED,1527608100,F,Oppa Funcan Style Remastered,3300,graphs;math;number theory;shortest paths
+2124,"EPIC Institute of Technology Round Summer 2025 (Codeforces Round 1036, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1751812500,D,Make a Palindrome,1700,greedy;sortings;two pointers
+775,VK Cup 2017 - Wild Card Round 2,Other,FINISHED,1493220900,A,University Schedule,2900,*special
+1195,Codeforces Round 574 (Div. 2),Div2,FINISHED,1563374100,E,OpenStreetMap,2100,data structures;two pointers
+429,Codeforces Round 245 (Div. 1),Div1,FINISHED,1399822800,A,Xor-tree,1300,dfs and similar;trees
+491,Testing Round 11,Other,FINISHED,1416519000,B,New York Hotel,2100,greedy;math
+1732,Codeforces Round 830 (Div. 2),Div2,FINISHED,1666519500,D1,Balance (Easy version),1500,brute force;data structures;implementation;number theory
+690,"Helvetic Coding Contest 2016 online mirror (teams, unrated)",Other,FINISHED,1468137600,C3,Brain Network (hard),2200,trees
+1029,Codeforces Round 506 (Div. 3),Div3,FINISHED,1535122200,C,Maximal Intersection,1600,greedy;math;sortings
+764,Codeforces Round 395 (Div. 2),Div2,FINISHED,1486042500,A,Taymyr is calling you,800,brute force;implementation;math
+1216,Codeforces Round 587 (Div. 3),Div3,FINISHED,1569049500,D,Swords,1300,math
+1027,Educational Codeforces Round 49 (Rated for Div. 2),Div2,FINISHED,1534602900,B,Numbers on the Chessboard,1200,implementation;math
+1253,Codeforces Round 600 (Div. 2),Div2,FINISHED,1573914900,D,Harmonious Graph,1700,constructive algorithms;dfs and similar;dsu;graphs;greedy;sortings
+2271,"DeepInfra Round 1 (Codeforces Round 1126, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1791644700,G,Grid Filling,3100,constructive algorithms;greedy;implementation
+556,Codeforces Round 310 (Div. 2),Div2,FINISHED,1435414200,B,Case of Fake Numbers,1100,brute force;implementation
+550,Codeforces Round 306 (Div. 2),Div2,FINISHED,1433435400,B,Preparing Olympiad,1400,bitmasks;brute force
+198,Codeforces Round 125 (Div. 1),Div1,FINISHED,1340379000,C,Delivering Carcinogen,2400,binary search;geometry
+242,Codeforces Round 149 (Div. 2),Div2,FINISHED,1352647800,B,Big Segment,1100,implementation;sortings
+1310,VK Cup 2019-2020 - Elimination Round (Engine),Other,FINISHED,1582473900,C,Au Pont Rouge,2800,binary search;dp;strings
+863,Educational Codeforces Round 29,Educational,FINISHED,1506006300,B,Kayaking,1500,brute force;greedy;sortings
+293,Croc Champ 2013 - Round 2,Other,FINISHED,1366644900,A,Weird Game,1500,games;greedy
+2196,Codeforces Round 1079 (Div. 1),Div1,FINISHED,1770820500,C2,Interactive Graph (Hard Version),2000,combinatorics;dfs and similar;dp;graphs;interactive
+1641,Codeforces Round 773 (Div. 1),Div1,FINISHED,1645611000,C,Anonymity Is Important,2200,binary search;brute force;data structures;dsu;greedy;sortings
+158,VK Cup 2012 Qualification Round 1,Other,FINISHED,1330804800,C,Cd and pwd commands,1400,*special;data structures;implementation
+1792,Educational Codeforces Round 142 (Rated for Div. 2),Div2,FINISHED,1674570900,E,Divisors and Table,2400,brute force;dfs and similar;dp;number theory
+508,Codeforces Round 288 (Div. 2),Div2,FINISHED,1422376200,B,Anton and currency you all know,1300,greedy;math;strings
+356,Codeforces Round 207 (Div. 1),Div1,FINISHED,1381838400,D,Bags and Coins,2700,bitmasks;constructive algorithms;dp;greedy
+1781,VK Cup 2022 - Отборочный раунд (Engine),Other,FINISHED,1673784300,H1,Window Signals (easy version),3200,
+2032,Codeforces Round 983 (Div. 2),Div2,FINISHED,1730471700,D,Genokraken,1800,constructive algorithms;data structures;graphs;greedy;implementation;interactive;trees;two pointers
+507,Codeforces Round 287 (Div. 2),Div2,FINISHED,1422028800,B,Amr and Pins,1400,geometry;math
+1558,"Codeforces Round 740 (Div. 1, based on VK Cup 2021 - Final (Engine))",Div1,FINISHED,1629815700,B,Up the Strip,1900,brute force;dp;math;number theory;two pointers
+2183,Hello 2026,Other,FINISHED,1767796500,C,War Strategy,1500,binary search;greedy;math;two pointers
+27,"Codeforces Beta Round 27 (Codeforces format, Div. 2)",Div2,FINISHED,1284130800,A,Next Test,1200,implementation;sortings
+2079,"XIX Open Olympiad in Informatics - Final Stage, Day 1 (Unrated, Online Mirror, IOI rules)",Other,FINISHED,1741334700,C,Dreaming Is Not Harmful,2300,*special
+2048,Codeforces Global Round 28,Global,FINISHED,1734618900,E,Kevin and Bipartite Graph,2000,constructive algorithms;graphs;greedy
+2228,Codeforces Round 1098 (Div. 2),Div2,FINISHED,1778942100,F,Momoyo and the Network,2700,binary search;dfs and similar;divide and conquer;dp;trees
+886,Технокубок 2018 - Отборочный Раунд 3,Other,FINISHED,1510502700,A,ACM ICPC,1000,brute force
+2233,Educational Codeforces Round 191 (Rated for Div. 2),Div2,FINISHED,1781015700,E2,Permutation Transmission (Difficult Version),2300,bitmasks;combinatorics;sortings
+1476,Educational Codeforces Round 103 (Rated for Div. 2),Div2,FINISHED,1611930900,G,Minimum Difference,3100,data structures;hashing;sortings;two pointers
+1578,"ICPC WF Moscow Invitational Contest - Online Mirror (Unrated, ICPC Rules, Teams Preferred)",Other,FINISHED,1633093500,I,Interactive Rays,3300,geometry;interactive
+1515,Codeforces Global Round 14,Global,FINISHED,1619966100,G,Phoenix and Odometers,2700,dfs and similar;graphs;math;number theory
+1984,Codeforces Global Round 26,Global,FINISHED,1717943700,H,Tower Capturing,3300,combinatorics;dp;geometry
+193,Codeforces Round 122 (Div. 1),Div1,FINISHED,1338737400,A,Cutting Figure,1700,constructive algorithms;graphs;trees
+1774,"Polynomial Round 2022 (Div. 1 + Div. 2, Rated, Prizes!)",Div1+Div2,FINISHED,1671287700,A,Add Plus Minus Sign,800,constructive algorithms;math
+1260,Educational Codeforces Round 77 (Rated for Div. 2),Div2,FINISHED,1574862600,C,Infinite Fence,1700,greedy;math;number theory
+1447,"Codeforces Round 683 (Div. 2, by Meet IT)",Div2,FINISHED,1605450900,A,Add Candies,800,constructive algorithms;math
+2084,"Teza Round 1 (Codeforces Round 1015, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1743863700,A,Max and Mod,800,constructive algorithms;math
+1821,Educational Codeforces Round 147 (Rated for Div. 2),Div2,FINISHED,1682001300,F,Timber,2600,combinatorics;dp;fft;math
+1843,Codeforces Round 881 (Div. 3),Div3,FINISHED,1687271700,F2,Omsk Metro (hard version),2300,data structures;dfs and similar;divide and conquer;dp;math;trees
+1558,"Codeforces Round 740 (Div. 1, based on VK Cup 2021 - Final (Engine))",Div1,FINISHED,1629815700,C,Bottom-Tier Reversals,2000,constructive algorithms;greedy
+604,Codeforces Round 334 (Div. 2),Div2,FINISHED,1448984100,B,More Cowbell,1400,binary search;greedy
+1819,Codeforces Round 866 (Div. 1),Div1,FINISHED,1681549500,C,The Fox and the Complete Tree Traversal,2400,constructive algorithms;dp;implementation;math;trees
+74,Codeforces Beta Round 68,Other,FINISHED,1302879600,E,Shift It!,2800,constructive algorithms
+1503,Codeforces Round 712 (Div. 1),Div1,FINISHED,1617460500,F,Balance the Cards,3500,constructive algorithms;data structures;divide and conquer;geometry;graphs;implementation
+107,Codeforces Beta Round 83 (Div. 1 Only),Div1,FINISHED,1314111600,C,Arrangement,2400,bitmasks;dp
+1431,Kotlin Heroes 5: ICPC Round,Other,FINISHED,1605191700,B,Polycarp and the Language of Gods,1400,*special;implementation;two pointers
+877,Codeforces Round 442 (Div. 2),Div2,FINISHED,1508773500,E,Danil and a Part-time Job,2000,bitmasks;data structures;trees
+1343,Codeforces Round 636 (Div. 3),Div3,FINISHED,1587479700,F,Restore the Permutation by Sorted Segments,2400,brute force;constructive algorithms;data structures;greedy;implementation
+722,"Intel Code Challenge Elimination Round (Div. 1 + Div. 2, combined)",Div1+Div2,FINISHED,1475330700,F,Cyclic Cipher,2800,chinese remainder theorem;data structures;implementation;number theory;two pointers
+803,Educational Codeforces Round 20,Educational,FINISHED,1493391900,D,Magazine Ad,1900,binary search;greedy
+1973,Codeforces Round 945 (Div. 2),Div2,FINISHED,1715956500,A,Chess For Three,900,brute force;dp;implementation;math
+2207,Codeforces Round 1085 (Div. 1 + Div. 2),Div1+Div2,FINISHED,1772980500,C,Where's My Water?,1600,data structures;divide and conquer;dp;math
+1373,Educational Codeforces Round 90 (Rated for Div. 2),Div2,FINISHED,1593095700,F,Network Coverage,2400,binary search;constructive algorithms;data structures;greedy
+1117,Educational Codeforces Round 60 (Rated for Div. 2),Div2,FINISHED,1550504400,E,Decypher the String,2200,bitmasks;chinese remainder theorem;constructive algorithms;interactive;math
+1265,Codeforces Round 604 (Div. 2),Div2,FINISHED,1575556500,A,Beautiful String,1000,constructive algorithms;greedy
+1002,Microsoft Q# Coding Contest - Summer 2018,Other,FINISHED,1530892800,B4,Distinguish four 2-qubit states - 2,1700,*special
+1766,Educational Codeforces Round 139 (Rated for Div. 2),Div2,FINISHED,1670855700,D,Lucky Chains,1600,math;number theory
+1551,Codeforces Round 734 (Div. 3),Div3,FINISHED,1627050900,A,Polycarp and Coins,800,greedy;math
+1986,Codeforces Round 954 (Div. 3),Div3,FINISHED,1719154200,C,Update Queries,1100,data structures;greedy;sortings
+1566,Codeforces Global Round 16,Global,FINISHED,1631457300,C,MAX-MEX Cut,1000,bitmasks;constructive algorithms;dp;greedy
+670,Codeforces Round 350 (Div. 2),Div2,FINISHED,1462464300,D1,Magic Powder - 1,1400,binary search;brute force;implementation
+1704,"CodeTON Round 2 (Div. 1 + Div. 2, Rated, Prizes!)",Div1+Div2,FINISHED,1659276300,H2,Game of AI (hard version),3500,combinatorics;fft;math
+269,Codeforces Round 165 (Div. 1),Div1,FINISHED,1359732600,D,Maximum Waterfall,2600,data structures;dp;graphs;sortings
+961,Educational Codeforces Round 41 (Rated for Div. 2),Div2,FINISHED,1522850700,F,k-substrings,2700,binary search;hashing;string suffix structures
+2217,Codeforces Round 1091 (Div. 2) and CodeCraft 26,Div2,FINISHED,1775572500,A,The Equalizer,800,math
+1658,Codeforces Round 779 (Div. 2),Div2,FINISHED,1648391700,C,Shinju and the Lost Permutation,1700,constructive algorithms;math
+2226,Codeforces Round 1095 (Div. 2),Div2,FINISHED,1777386900,D,Reserved Reversals,1900,constructive algorithms;dp;greedy;math
+1085,Technocup 2019 - Elimination Round 4,Other,FINISHED,1545572100,E,Vasya and Templates,2300,greedy;implementation;strings
+1879,Educational Codeforces Round 155 (Rated for Div. 2),Div2,FINISHED,1695566100,C,Make it Alternating,1300,combinatorics;dp;greedy
+2178,Good Bye 2025,Other,FINISHED,1766846100,C,First or Second,1200,dp;greedy;implementation
+1842,"CodeTON Round 5 (Div. 1 + Div. 2, Rated, Prizes!)",Div1+Div2,FINISHED,1687615500,F,Tenzing and Tree,2500,dfs and similar;greedy;shortest paths;sortings;trees
+913,Hello 2018,Other,FINISHED,1515422700,E,Logical Expression,2400,bitmasks;dp;shortest paths
+685,Codeforces Round 359 (Div. 1),Div1,FINISHED,1466699700,B,Kay and Snowflake,1900,data structures;dfs and similar;dp;trees
+9,Codeforces Beta Round 9 (Div. 2 Only),Div2,FINISHED,1270983600,E,Interestring graph and Apples,2300,dfs and similar;dsu;graphs
+985,Educational Codeforces Round 44 (Rated for Div. 2),Div2,FINISHED,1526913900,D,Sand Fortress,2100,binary search;constructive algorithms;math
+530,VK Cup 2015 - Wild Card Round 1,Other,FINISHED,1427562000,F,Jumping frogs,2100,*special
+1672,Codeforces Global Round 20,Global,FINISHED,1650722700,I,PermutationForces,3000,data structures;greedy
+174,VK Cup 2012 Round 3 (Unofficial Div. 2 Edition),Div2,FINISHED,1333897500,A,Problem About Equation,1100,math
+641,VK Cup 2016 - Round 2,Other,FINISHED,1461515700,B,Little Artem and Matrix,1400,implementation
+894,Codeforces Round 447 (Div. 2),Div2,FINISHED,1511099700,C,Marco and GCD Sequence,1900,constructive algorithms;math
+1666,"2021-2022 ICPC, NERC, Northern Eurasia Onsite (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",Other,FINISHED,1649837100,H,Heroes of Might,3500,math
+616,Educational Codeforces Round 5,Educational,FINISHED,1452524400,F,Expensive Strings,2700,data structures;sortings;string suffix structures;strings
+106,Codeforces Beta Round 82 (Div. 2),Div2,FINISHED,1313766000,C,Buns,1700,dp
+2187,Codeforces Round 1077 (Div. 1),Div1,FINISHED,1769697300,G,Many Cartesian Trees,3500,greedy;sortings;trees
+1091,Good Bye 2018,Other,FINISHED,1546180500,D,New Year and the Permutation Concatenation,1700,combinatorics;dp;math
+21,Codeforces Alpha Round 21 (Codeforces format),Other,FINISHED,1277730300,A,Jabber ID,1900,implementation;strings
+400,Codeforces Round 234 (Div. 2),Div2,FINISHED,1394033400,E,Inna and Binary Logic,2100,binary search;bitmasks;data structures
+1346,Kotlin Heroes: Episode 4,Other,FINISHED,1590762900,D,Constructing the Dungeon,1600,*special;graphs;greedy
+65,Codeforces Beta Round 60,Other,FINISHED,1299340800,C,Harry Potter and the Golden Snitch,2100,binary search;geometry
+173,Croc Champ 2012 - Round 1,Other,FINISHED,1333724400,C,Spiral Maximum,1900,brute force;dp
+986,Codeforces Round 485 (Div. 1),Div1,FINISHED,1527608100,C,AND Graph,2500,bitmasks;dfs and similar;dsu;graphs
+2118,Codeforces Round 1030 (Div. 2),Div2,FINISHED,1749738900,B,Make It Permutation,1200,constructive algorithms
+1420,Codeforces Round 672 (Div. 2),Div2,FINISHED,1600958100,D,Rescue Nibel!,1800,combinatorics;data structures;sortings
+1936,Codeforces Round 930 (Div. 1),Div1,FINISHED,1709217300,E,Yet Yet Another Permutation Problem,3400,divide and conquer;fft;math
+1697,Educational Codeforces Round 130 (Rated for Div. 2),Div2,FINISHED,1655044500,D,Guess The String,1900,binary search;constructive algorithms;interactive
+2146,Codeforces Round 1052 (Div. 2),Div2,FINISHED,1758465300,D1,Max Sum OR (Easy Version),1500,bitmasks;constructive algorithms;divide and conquer;greedy;trees
+1393,Codeforces Round 662 (Div. 2),Div2,FINISHED,1596810900,E1,Twilight and Ancient Scroll (easier version),2800,dp;hashing;implementation;string suffix structures;strings
+2078,Codeforces Round 1008 (Div. 2),Div2,FINISHED,1741617900,B,Vicious Labyrinth,1100,constructive algorithms;graphs;greedy;implementation;math
+2064,Codeforces Round 1005 (Div. 2),Div2,FINISHED,1739716500,B,Variety is Discouraged,1100,binary search;constructive algorithms;greedy;two pointers
+1380,Educational Codeforces Round 91 (Rated for Div. 2),Div2,FINISHED,1594565100,C,Create The Teams,1400,brute force;dp;greedy;implementation;sortings
+1422,Codeforces Round 675 (Div. 2),Div2,FINISHED,1601827500,F,Boring Queries,2700,data structures;math;number theory
+1846,Codeforces Round 883 (Div. 3),Div3,FINISHED,1688740500,G,Rudolf and CodeVid-23,1900,bitmasks;dp;graphs;greedy;shortest paths
+449,Codeforces Round 257 (Div. 1),Div1,FINISHED,1405774800,B,Jzzhu and Cities,2000,graphs;greedy;shortest paths
+1569,Educational Codeforces Round 113 (Rated for Div. 2),Div2,FINISHED,1631111700,F,Palindromic Hamiltonian Path,3000,brute force;dfs and similar;dp;graphs;hashing
+1924,Codeforces Round 921 (Div. 1),Div1,FINISHED,1706366700,E,Paper Cutting Again,3100,combinatorics;probabilities
+2252,Codeforces Round 1115 (Div. 2),Div2,FINISHED,1786026900,B,Always Changing,1100,dp;greedy;math;strings
+466,Codeforces Round 266 (Div. 2),Div2,FINISHED,1410535800,D,Increase Sequence,2100,combinatorics;dp
+2171,Codeforces Round 1065 (Div. 3),Div3,FINISHED,1763649300,D,Rae Taylor and Trees (easy version),1400,binary search;data structures;dp;dsu;greedy;implementation;trees
+332,Codeforces Round 193 (Div. 2),Div2,FINISHED,1374679800,B,Maximum Absurdity,1500,data structures;dp;implementation
+1680,Educational Codeforces Round 128 (Rated for Div. 2),Div2,FINISHED,1652452500,E,Moving Chips,2000,bitmasks;dp;greedy
+427,Codeforces Round 244 (Div. 2),Div2,FINISHED,1399044600,A,Police Recruits,800,implementation
+852,Bubble Cup X - Finals [Online Mirror],Other,FINISHED,1504432800,G,Bathroom terminal,1700,implementation
+1807,Codeforces Round 859 (Div. 4),Div4,FINISHED,1679237700,G1,Subsequence Addition (Easy Version),1100,brute force;data structures;dp;greedy;implementation;sortings
+200,Codeforces Round 126 (Div. 2),Div2,FINISHED,1340551800,E,Tractor College,2400,implementation;math;number theory;ternary search
+676,Codeforces Round 354 (Div. 2),Div2,FINISHED,1464188700,C,Vasya and String,1500,binary search;dp;strings;two pointers
+2172,"2025 ICPC Asia Taichung Regional Contest (Unrated, Online Mirror, ICPC Rules, Preferably Teams)",Other,FINISHED,1763257800,D,Divisor Card Game,3100,combinatorics;dp
+1151,Codeforces Round 553 (Div. 2),Div2,FINISHED,1555601700,F,Sonya and Informatics,2300,combinatorics;dp;matrices;probabilities
+1731,Codeforces Round 841 (Div. 2) and Divide by Zero 2022,Div2,FINISHED,1672151700,B,Kill Demodogs,1100,greedy;math
+1252,"2019-2020 ICPC, Asia Jakarta Regional Contest (Online Mirror, ICPC Rules, Teams Preferred)",Other,FINISHED,1572147000,B,Cleaning Robots,2300,dp;trees
+2008,Codeforces Round 970 (Div. 3),Div3,FINISHED,1725201300,G,Sakurako's Task,1800,binary search;greedy;math;number theory
+1715,Codeforces Round 816 (Div. 2),Div2,FINISHED,1661006100,A,Crossmarket,800,constructive algorithms;greedy;math
+411,Coder-Strike 2014 - Qualification Round,Other,FINISHED,1397505600,A,Password Check,800,*special;implementation
+23,Codeforces Beta Round 23,Other,FINISHED,1278687600,D,Tetragon,2600,geometry;math
+958,"Helvetic Coding Contest 2018 online mirror (teams allowed, unrated)",Other,FINISHED,1523689500,F2,Lightsabers (medium),1800,binary search;two pointers
+331,ABBYY Cup 3.0 - Finals (online version),Other,FINISHED,1374075000,A1,Oh Sweet Beaverette,1400,brute force;implementation
+1747,Codeforces Round 832 (Div. 2),Div2,FINISHED,1667572500,C,Swap Game,1200,games
+734,Codeforces Round 379 (Div. 2),Div2,FINISHED,1479227700,F,Anton and School,2500,bitmasks;constructive algorithms;implementation;math
+1995,Codeforces Round 961 (Div. 2),Div2,FINISHED,1721745300,E2,Let Me Teach You a Lesson (Hard Version),2900,data structures;dp;matrices;two pointers
+46,School Personal Contest #2 (Winter Computer School 2010/11) - Codeforces Beta Round 43 (ACM-ICPC Rules),Other,FINISHED,1291536000,E,Comb,1900,data structures;dp
+1106,Codeforces Round 536 (Div. 2),Div2,FINISHED,1548938100,A,Lunar New Year and Cross Counting,800,implementation
+1426,Codeforces Round 674 (Div. 3),Div3,FINISHED,1601280300,F,Number of Subsequences,2000,combinatorics;dp;strings
+691,Educational Codeforces Round 14,Educational,FINISHED,1468425600,B,s-palindrome,1600,implementation;strings
+711,Codeforces Round 369 (Div. 2),Div2,FINISHED,1472472300,B,Chris and Magic Square,1400,constructive algorithms;implementation
+2227,Codeforces Round 1096 (Div. 3),Div3,FINISHED,1777559700,H,Fallen Leaves,2100,dfs and similar;dp;trees
+1332,Codeforces Round 630 (Div. 2),Div2,FINISHED,1585661700,G,No Monotone Triples,3100,data structures
+243,Codeforces Round 150 (Div. 1),Div1,FINISHED,1353079800,B,Hydra,2000,graphs;sortings
+1066,Codeforces Round 515 (Div. 3),Div3,FINISHED,1539354900,E,Binary Numbers AND Sum,1700,data structures;implementation;math
+1476,Educational Codeforces Round 103 (Rated for Div. 2),Div2,FINISHED,1611930900,E,Pattern Matching,2300,bitmasks;data structures;dfs and similar;graphs;hashing;sortings;strings
+2225,Educational Codeforces Round 189 (Rated for Div. 2),Div2,FINISHED,1776782100,G,Simple Problem,2900,brute force;graphs;greedy;number theory
+1850,Codeforces Round 886 (Div. 4),Div4,FINISHED,1689950100,C,Word on the Paper,800,implementation;strings
+1730,Codeforces Round 823 (Div. 2),Div2,FINISHED,1664116500,A,Planets,800,data structures;greedy;sortings
+1325,Codeforces Round 628 (Div. 2),Div2,FINISHED,1584196500,C,Ehab and Path-etic MEXs,1500,constructive algorithms;dfs and similar;greedy;trees
+455,Codeforces Round 260 (Div. 1),Div1,FINISHED,1407511800,C,Civilization,2100,dfs and similar;dp;dsu;ternary search;trees
+1913,Educational Codeforces Round 160 (Rated for Div. 2),Div2,FINISHED,1702910100,F,Palindromic Problem,2800,binary search;data structures;hashing;string suffix structures;strings
+1279,Educational Codeforces Round 79 (Rated for Div. 2),Div2,FINISHED,1577457600,E,New Year Permutations,2700,combinatorics;dp
+978,Codeforces Round 481 (Div. 3),Div3,FINISHED,1526202300,A,Remove Duplicates,800,implementation
+1695,Codeforces Round 801 (Div. 2) and EPIC Institute of Technology Round,Div2,FINISHED,1655562900,C,Zero Path,1700,brute force;data structures;dp;graphs;greedy;shortest paths
+1523,"Deltix Round, Spring 2021 (open for everyone, rated, Div. 1 + Div. 2)",Div1+Div2,FINISHED,1622385300,A,Game of Life,800,implementation
+2020,Codeforces Round 976 (Div. 2) and Divide By Zero 9.0,Div2,FINISHED,1727624100,C,Bitwise Balancing,1400,bitmasks;hashing;implementation;math;schedules;ternary search
+1147,Forethought Future Cup - Final Round (Onsite Finalists Only),Other,FINISHED,1556989500,F,Zigzag Game,3500,games;interactive
+519,Codeforces Round 294 (Div. 2),Div2,FINISHED,1425128400,D,A and B and Interesting Substrings,1800,data structures;dp;two pointers
+576,Codeforces Round 319 (Div. 1),Div1,FINISHED,1441902600,C,Points on Plane,2100,constructive algorithms;divide and conquer;geometry;greedy;sortings
+765,Codeforces Round 397 by Kaspersky Lab and Barcelona Bootcamp (Div. 1 + Div. 2 combined),Div1+Div2,FINISHED,1487059500,F,Souvenirs,3100,data structures
+583,Codeforces Round 323 (Div. 2),Div2,FINISHED,1443890700,B,Robot's Task,1200,greedy;implementation
+1623,Codeforces Round 763 (Div. 2),Div2,FINISHED,1640698500,E,Middle Duplication,2500,data structures;dfs and similar;greedy;strings;trees
+2097,Codeforces Round 1021 (Div. 1),Div1,FINISHED,1745656500,A,Sports Betting,1400,2-sat;brute force;math;sortings
+2163,Codeforces Round 1063 (Div. 2),Div2,FINISHED,1762787100,D2,Diadrash (Hard Version),2500,binary search;interactive;math;sortings
+2045,"2024-2025 ICPC Asia Jakarta Regional Contest (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",Other,FINISHED,1733029500,D,Aquatic Dragon,3500,
+1918,Codeforces Round 922 (Div. 2),Div2,FINISHED,1706625300,D,Blocking Elements,1900,binary search;data structures;dp;implementation;two pointers
+1811,Codeforces Round 863 (Div. 3),Div3,FINISHED,1680618900,G1,Vlad and the Nice Paths (easy version),2100,combinatorics;dp;math
+1824,Codeforces Round 872 (Div. 1),Div1,FINISHED,1683547500,A,LuoTianyi and the Show,1400,greedy;implementation
+557,Codeforces Round 311 (Div. 2),Div2,FINISHED,1435676400,D,Vitaly and Cycle,2000,combinatorics;dfs and similar;graphs;math
+1695,Codeforces Round 801 (Div. 2) and EPIC Institute of Technology Round,Div2,FINISHED,1655562900,D1,Tree Queries (Easy Version),2200,brute force;constructive algorithms;dfs and similar;dp;greedy;trees
+1517,Contest 2050 and Codeforces Round 718 (Div. 1 + Div. 2),Div1+Div2,FINISHED,1619188500,C,Fillomino 2,1400,constructive algorithms;dfs and similar;greedy;implementation
+1304,Codeforces Round 620 (Div. 2),Div2,FINISHED,1581771900,F2,Animal Observation (hard version),2400,data structures;dp;greedy
+292,Croc Champ 2013 - Round 1,Other,FINISHED,1366040100,A,SMSC,1100,implementation
+687,Codeforces Round 360 (Div. 1),Div1,FINISHED,1467219900,B,Remainders Game,1800,chinese remainder theorem;math;number theory
+1184,"Helvetic Coding Contest 2019 online mirror (teams allowed, unrated)",Other,FINISHED,1562483100,C3,Heidi and the Turing Test (Hard),3200,
+1280,Codeforces Round 607 (Div. 1),Div1,FINISHED,1576386300,C,Jeremy Bearimy,2000,dfs and similar;graphs;greedy;trees
+1272,Codeforces Round 605 (Div. 3),Div3,FINISHED,1576157700,F,Two Bracket Sequences,2200,dp;strings;two pointers
+1973,Codeforces Round 945 (Div. 2),Div2,FINISHED,1715956500,E,"Cat, Fox and Swaps ",2500,graphs;math;sortings
+1443,"Codeforces Round 681 (Div. 2, based on VK Cup 2019-2020 - Final)",Div2,FINISHED,1604327700,E,Long Permutation,2400,brute force;math;two pointers
+1622,Educational Codeforces Round 120 (Rated for Div. 2),Div2,FINISHED,1640615700,B,Berland Music,1000,data structures;greedy;math;sortings
+276,Codeforces Round 169 (Div. 2),Div2,FINISHED,1361719800,E,Little Girl and Problem on Trees,2100,data structures;graphs;trees
+749,Codeforces Round 388 (Div. 2),Div2,FINISHED,1482165300,D,Leaving Auction,2000,binary search;data structures
+1913,Educational Codeforces Round 160 (Rated for Div. 2),Div2,FINISHED,1702910100,C,Game with Multiset,1300,binary search;bitmasks;brute force;greedy
+374,Codeforces Round 220 (Div. 2),Div2,FINISHED,1387380600,B,Inna and Nine,1500,combinatorics;greedy
+506,Codeforces Round 286 (Div. 1),Div1,FINISHED,1421586000,E,Mr. Kitayuta's Gift,3000,combinatorics;dp;matrices;strings
+1996,Codeforces Round 962 (Div. 3),Div3,FINISHED,1722004500,B,Scale,800,greedy;implementation
+1348,Codeforces Round 638 (Div. 2),Div2,FINISHED,1588343700,D,Phoenix and Science,1900,binary search;constructive algorithms;greedy;implementation;math
+2167,Codeforces Round 1062 (Div. 4),Div4,FINISHED,1761662100,C,Isamatdin and His Magic Wand!,800,constructive algorithms;greedy;implementation;sortings
+1054,Mail.Ru Cup 2018 Round 1,Other,FINISHED,1539880500,A,Elevator or Stairs?,800,implementation
+2072,Codeforces Round 1006 (Div. 3),Div3,FINISHED,1740494100,A,"New World, New Me, New Array",800,greedy;implementation;math
+1144,Codeforces Round 550 (Div. 3),Div3,FINISHED,1554041100,E,Median String,1900,bitmasks;math;number theory;strings
+1876,"Codeforces Round 902 (Div. 1, based on COMPFEST 15 - Final Round)",Div1,FINISHED,1696755900,E,Ball-Stackable,3300,constructive algorithms;data structures;dp;trees
+1938,"2024 ICPC Asia Pacific Championship - Online Mirror (Unrated, Online Mirror, ICPC Rules, Teams Preferred)",Other,FINISHED,1709346900,H,Pho Restaurant,1600,
+1271,Codeforces Round 608 (Div. 2),Div2,FINISHED,1576401300,B,Blocks,1300,greedy;math
+1971,Codeforces Round 944 (Div. 4),Div4,FINISHED,1715351700,B,Different String,800,implementation;strings
