@@ -21,3 +21,21 @@ def test_user_cache(tmp_path,monkeypatch):
     assert cf_api.fetch_user_info('abc',lambda q: calls.append(q) or [{'handle':'abc'}])==({'handle':'abc'},False)
     assert calls==['user.info?handles=abc']
     assert cf_api.fetch_user_info('abc',lambda _: (_ for _ in ()).throw(RuntimeError('offline')))==({'handle':'abc'},True)
+
+
+def test_default_get_raises_handle_not_found(monkeypatch):
+    import pytest
+    import cf_api
+
+    class Resp:
+        status_code = 400
+
+        def json(self):
+            return {"status": "FAILED", "comment": "handles: User with handle zz not found"}
+
+        def raise_for_status(self):
+            raise AssertionError("FAILED body must be checked before the HTTP status")
+
+    monkeypatch.setattr(cf_api.requests, "get", lambda *a, **k: Resp())
+    with pytest.raises(cf_api.HandleNotFound):
+        cf_api._default_get("user.info?handles=zz")

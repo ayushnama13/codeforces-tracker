@@ -8,9 +8,20 @@ from pathlib import Path
 import requests
 
 BASE="https://codeforces.com/api"
+class HandleNotFound(LookupError):
+    """Codeforces says the handle does not exist."""
+
+
 def _default_get(path):
-    response=requests.get(f"{BASE}/{path}",timeout=30);response.raise_for_status();data=response.json()
-    if data.get("status")!="OK":raise RuntimeError(data.get("comment","Codeforces API error"))
+    response=requests.get(f"{BASE}/{path}",timeout=30)
+    try:data=response.json()
+    except ValueError:data=None
+    if isinstance(data,dict) and data.get("status")=="FAILED":
+        comment=data.get("comment") or "Codeforces API error"
+        if "not found" in comment.lower():raise HandleNotFound(comment)
+        raise RuntimeError(comment)
+    response.raise_for_status()
+    if not isinstance(data,dict) or data.get("status")!="OK":raise RuntimeError("Codeforces API error")
     return data["result"]
 def _fetch(handle,kind,get):
     cache=Path("cache")/f"{handle.lower()}_{kind}.json"
