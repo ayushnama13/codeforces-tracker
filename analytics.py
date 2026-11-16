@@ -249,11 +249,14 @@ def review_queue(subs,store,now,tz=config.TIMEZONE,daily_cap=10):
         reviews=store.data.get("reviews",{}).get(key,[])
         if len(reviews)>=len(REVIEW_INTERVALS_DAYS):mastered+=1;continue
         s=states.get(key,{})
-        base=s.get("first_ok_ts") if s.get("first_ok_ts") is not None else p.get("added_on")
-        if base is None: continue
-        if isinstance(base,str):
-            try: base=datetime.fromisoformat(base).replace(tzinfo=None).replace(tzinfo=ZoneInfo(tz)).timestamp()
-            except ValueError: continue
+        added=p.get("added_on")
+        if isinstance(added,str):
+            try: added=datetime.fromisoformat(added).replace(tzinfo=None).replace(tzinfo=ZoneInfo(tz)).timestamp()
+            except ValueError: added=None
+        # The clock starts at the most recent touch: latest submission or the day it was added.
+        candidates=[x for x in (s.get("last_ts"),added) if x is not None]
+        if not candidates: continue
+        base=max(candidates)
         base=int(reviews[-1]) if reviews else int(base)
         interval=REVIEW_INTERVALS_DAYS[len(reviews)]
         due_ts=base+interval*86400

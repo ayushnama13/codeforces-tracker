@@ -46,3 +46,18 @@ def test_unrated_user_and_tries(subs, problems_path):
         {"creationTimeSeconds": 2, "verdict": "OK", "problem": {"contestId": 5, "index": "B", "name": "n"}, "author": {}},
     ])
     assert st["5B"]["tries"] == 2
+
+
+def test_review_clock_starts_at_latest_touch(tmp_path):
+    day = 86400
+    old_sub = [{"creationTimeSeconds": 1_000_000, "verdict": "OK",
+                "problem": {"contestId": 1, "index": "A", "name": "x", "tags": []}}]
+    s = StateStore(tmp_path, "someone")
+    # old solve, added to the backlog just now: not due yet, the clock starts at add time
+    s.add_backlog({"contestId": 1, "index": "A", "name": "x", "tags": [], "added_on": 5_000_000})
+    assert a.review_queue(old_sub, s, now=5_000_000 + 2 * day)["due"] == []
+    assert a.review_queue(old_sub, s, now=5_000_000 + 8 * day)["due"][0]["id"] == "1A"
+    # a newer submission after adding pushes the clock forward again
+    old_sub.append({"creationTimeSeconds": 6_000_000, "verdict": "WRONG_ANSWER", "problem": old_sub[0]["problem"]})
+    assert a.review_queue(old_sub, s, now=6_000_000 + 2 * day)["due"] == []
+    assert a.review_queue(old_sub, s, now=6_000_000 + 8 * day)["due"][0]["id"] == "1A"
