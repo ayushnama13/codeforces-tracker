@@ -14,3 +14,4 @@ FOCUS_TAGS = [
     "trees",
     "bitmasks",
 ]
+TIMEZONE = "Asia/Kolkata"
