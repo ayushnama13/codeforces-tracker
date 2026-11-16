@@ -258,7 +258,10 @@
   };
 
   // ---- coverage ----
-  const cov = { axis: ls.get('cov.axis', 'letter'), lastN: ls.get('cov.lastN', '100'), divs: JSON.parse(ls.get('cov.divs', '[]') || '[]'), mode: ls.get('cov.mode', 'pct') };
+  const cov = { axis: ls.get('cov.axis', 'letter'), lastN: ls.get('cov.lastN', '100'), divs: (() => { try { return JSON.parse(ls.get('cov.divs', '[]') || '[]'); } catch (e) { return []; } })(), mode: ls.get('cov.mode', 'pct') };
+  if (!['total', 'pct', 'unsolved'].includes(cov.mode)) cov.mode = 'pct';
+  if (!['letter', 'tag'].includes(cov.axis)) cov.axis = 'letter';
+  if (!Array.isArray(cov.divs)) cov.divs = [];
   function saveCov() { ls.set('cov.axis', cov.axis); ls.set('cov.lastN', cov.lastN); ls.set('cov.divs', JSON.stringify(cov.divs)); ls.set('cov.mode', cov.mode); }
   pages.coverage = {
     load() {
