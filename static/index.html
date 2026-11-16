@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CF Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a78d6'/%3E%3Cstop offset='1' stop-color='%2303a89e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3C/svg%3E">
+<script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/today"><i></i>cf tracker</a>
+    <nav id="nav">
+      <a href="#/today">Today</a><a href="#/practice">Practice</a><a href="#/progress">Progress</a><a href="#/coverage">Coverage</a><a href="#/revision">Revision</a>
+    </nav>
+    <div class="who">
+      <form id="handle-form"><input class="field" id="handle" aria-label="Codeforces handle" spellcheck="false" autocomplete="off"></form>
+      <button class="btn" id="theme" title="Toggle light/dark" aria-label="Toggle light or dark theme">◐</button>
+      <button class="btn" id="refresh" title="Fetch the latest data from Codeforces"><span id="refresh-ic">↻</span><span class="lbl">Refresh</span></button>
+    </div>
+  </div>
+  <div class="mnav" id="mnav"></div>
+</header>
+<main id="view"></main>
+<div class="tip" id="tip" role="tooltip"></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
